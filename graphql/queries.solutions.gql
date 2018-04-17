@@ -1,0 +1,59 @@
+query standard {
+    tasks {
+        _id
+        state
+        title
+        sameCategory{
+            title
+            state
+        }
+    }
+}
+
+query category($title: String) {
+    category(title: $title){
+        _id
+        state
+        title
+        sameCategory{
+            title
+            state
+        }
+    }
+}
+
+query edit($id: ID) {
+    task(id: $id){
+        _id
+        title
+        state
+        date
+        place
+        category
+        notes
+    }
+}
+
+query single($id: ID) {
+    task(id: $id){
+        _id
+        title
+        state
+        date
+        place
+        category
+        notes
+        sameCategory {
+            title
+            state
+        }
+        samePlace {
+            title
+            state
+        }
+        sameDate {
+            title
+            state
+        }
+    }
+}

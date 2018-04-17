@@ -1,0 +1,11 @@
+mutation addItem($task: createTask){
+    createTask(task: $task){
+        title
+    }
+}
+
+mutation editItem($task: editTask){
+    editTask(task: $task){
+        title
+    }
+}

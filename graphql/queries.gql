@@ -1,0 +1,15 @@
+query standard {
+    TODO
+}
+
+query category{
+    TODO
+}
+
+query edit{
+    TODO
+}
+
+query single{
+    TODO
+}
